@@ -1,0 +1,25 @@
+### 背景 ###
+你将看到一张高分辨率遥感图像。请识别并统计以下地物类别（英文类别名）：
+["airplane","ship","storage tank","baseball diamond","tennis court","basketball court","ground track field","harbor","bridge","vehicle"]
+
+### 要求 ###
+1) 仅在你有把握时计数；不确定的忽略。
+2) 若画面很大，先从整体到局部扫查，避免重复计数。
+3) 输出只用 JSON，严格下述 schema，不要解释文字。
+
+### 输出(JSON 仅此结构) ###
+{
+  "objects": [
+    {"class":"airplane","count":0},
+    {"class":"ship","count":0},
+    {"class":"storage tank","count":0},
+    {"class":"baseball diamond","count":0},
+    {"class":"tennis court","count":0},
+    {"class":"basketball court","count":0},
+    {"class":"ground track field","count":0},
+    {"class":"harbor","count":0},
+    {"class":"bridge","count":0},
+    {"class":"vehicle","count":0}
+  ],
+  "notes": ""
+}
